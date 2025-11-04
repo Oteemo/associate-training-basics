@@ -45,6 +45,8 @@ cd nginx-docker-demo
 ```
 **2. Create a Simple HTML Website**
 
+You will see a website created for recipes in the index.html file uploaded here, this is just an example of the capabilities of customizing a website. Feel free to use the below example or create your own website
+
 ```
 nano index.html
 ```
