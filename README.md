@@ -1,7 +1,5 @@
 ## Associate Training and Hands-on for creating a website using Docker, HTML and Nginx: Beginner ##
 
-(Rough Draft)
-
 Before beginning the hands-on lab, please review the concepts below for a clear understanding. Feel free to use the resources listed or research on your own. 
 
 **Docker Basics**
