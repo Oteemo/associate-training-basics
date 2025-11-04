@@ -44,7 +44,6 @@ Before beginning the hands-on lab, please review the concepts below for a clear 
 ```
 mkdir nginx-docker-demo
 cd nginx-docker-demo
-mkdir website
 ```
 **2. Create a Simple HTML Website**
 
@@ -72,13 +71,13 @@ Add the followng HTML code for the file
 **Note** Make sure you have the Docker Application running before continuing the next steps
 
 **3. Create a Dockerfile in the project root and add the following code:**
+
 ```
-mkdir Dockerfile
 nano Dockerfile
 ```
 ```
 FROM nginx:alpine
-COPY website/ /usr/share/nginx/html/
+COPY index.html /usr/share/nginx/html/index.html
 EXPOSE 80
 ```
 **4. Build the Docker Image**
@@ -97,6 +96,9 @@ docker run -d -p 8080:80 --name my-website my-nginx-website:v1
 ```
 http://localhost:8080
 ```
+You should see a static webpage that displays: Welcome to My Dockerized Website!
+This is running in an Nginx container.
+
 **7. Inspect and Manage**
 
 ```
